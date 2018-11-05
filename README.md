@@ -1,2 +1,1 @@
-# john_bryce_talent_nov_2018
-Materials for John Bryce Talent program
+# Materials for John Bryce Talent program - November 2018
