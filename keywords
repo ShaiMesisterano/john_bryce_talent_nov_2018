@@ -6,6 +6,10 @@ JS
 	closure
 	scope
 	promise
+Express
+	REST API
+	CRUD
+	Middleware
 React
 	SoC (Seperation of Concerns)
 	Two-way binding
