@@ -17,7 +17,15 @@
 	</ol>
 <li>React</li><ol>
 	<li>SoC (Seperation of Concerns)</li>
-	<li>Two-way binding</li>
 	<li>Virtual DOM</li>
+	<li>
+	</ol>
+<li>React-Redux</li><ol>
+	<li>Store</li>
+	<li>Reducer</li>
+	<li>Action Type</li>
+	<li>Action</li>
+	<li>Dispatcher</li>
+	<li>HOC (Higher Order Component)</li>
 	</ol>
  </ol>
