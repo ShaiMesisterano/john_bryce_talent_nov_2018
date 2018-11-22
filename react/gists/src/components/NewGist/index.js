@@ -20,7 +20,7 @@ class NewGist extends React.Component {
                     <br /><br />
                     <input type="text" placeholder="Author..." onBlur={(event) => this.setData(event, "author")} />
                     <br /><br />
-                    <input type="submit" value="Add" />
+                    <input type="submit" value="Add" className="btn btn-primary" />
                 </form>
             </div>
         );

@@ -1,6 +1,7 @@
 import React from 'react';
 import NewGist from '../NewGist';
 import GistsTable from '../GistsTable';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Gists extends React.Component {
     constructor() {
@@ -21,8 +22,19 @@ class Gists extends React.Component {
         };
     }
     render() {
+        const myStyle = {
+            fontSize: '12px',
+            textDecoration: 'underline'
+        }
         return (
             <div>
+                <header>
+                    <div className="navbar navbar-dark bg-dark box-shadow">
+                        <div className="container-fluid navbar-brand d-flex align-items-center">
+                            Gists
+                        </div>
+                    </div>
+                </header>
                 <NewGist title="Add New" addNew={this.addNew} />
                 <GistsTable gists={this.state.gists} />
             </div>
@@ -32,12 +44,13 @@ class Gists extends React.Component {
         // Using element's ID
         // console.log(event.target.gist_name.value);
         // const _gists = JSON.parse(JSON.stringify(this.state.gists));
-        const _gists = this.state.gists.concat();
-        console.log(_gists);
-        _gists.push(newGist);
-        this.setState({
-            gists: _gists
-        });
+        // const _gists = this.state.gists.concat();
+        // console.log(_gists);
+        // _gists.push(newGist);
+        // this.setState({
+        //     gists: _gists
+        // });
+        this.props.history.push('/about-us');
         event.preventDefault();
         
     }

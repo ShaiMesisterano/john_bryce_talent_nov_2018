@@ -10,17 +10,17 @@ const GistsTable = props => {
         );      
     });
     return (
-        <div>
-        <table>
-            <tbody>
+        <table className="table">
+            <thead>
                 <tr>
                     <th>Name</th>
                     <th>Author</th>
                 </tr>
+            </thead>
+            <tbody>
                 { data }
             </tbody>
         </table>
-    </div>
     );
 };
 
