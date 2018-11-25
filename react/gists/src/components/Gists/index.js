@@ -35,7 +35,7 @@ class Gists extends React.Component {
                         </div>
                     </div>
                 </header>
-                <NewGist title="Add New" addNew={this.addNew} />
+                <NewGist title="Add New" addNew={(e) => this.addNew(e)} />
                 <GistsTable gists={this.state.gists} />
             </div>
         );
@@ -50,7 +50,9 @@ class Gists extends React.Component {
         // this.setState({
         //     gists: _gists
         // });
-        this.props.history.push('/about-us');
+        //this.props.history.push("https://www.twitter.com");
+        this.props.history.location = "https://www.twitter.com";
+        //this.props.history.go(1);
         event.preventDefault();
         
     }
